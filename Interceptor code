@@ -1,0 +1,7 @@
+<mvc:annotation-driven/>
+     <mvc:interceptors>
+       <mvc:interceptor>
+         <mvc:mapping path="/user/*" />
+           <bean class="com.springmvc.interceptor.AuthInterceptor"></bean>
+       </mvc:interceptor>
+     </mvc:interceptors>   
